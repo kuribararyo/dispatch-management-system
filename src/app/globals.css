@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.table-bordered {
+    border-collapse: collapse;
+  }
+  
+  .table-bordered td, .table-bordered th {
+    border: 1px solid black;
+  }
+  /* 地域を区切る行に太線を適用 */
+  .table-bordered .region-row td {
+    border-top: 3px solid black;
+  }
+  /* 日付のセルを右揃えにする */
+.table-bordered .date-cell {
+    text-align: right;
+  }
