@@ -1,6 +1,8 @@
 "use client"
 import Header from "@/app/components/Header";
 import React, { useState } from 'react';
+import Tooltip from '@mui/material/Tooltip';
+
 
 export default function Home() {
   const [hoverText, setHoverText] = useState('');
@@ -68,9 +70,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="tooltip bg-white text-black text-xl rounded-md p-2 shadow-md" style={{ position: 'fixed', left: tooltipPosition.x, top: tooltipPosition.y, zIndex: 1000 }}>
+      {/* <div className="tooltip bg-white text-black text-xl rounded-md p-2 shadow-md" style={{ position: 'fixed', left: tooltipPosition.x, top: tooltipPosition.y, zIndex: 1000 }}>
           {hoverText}
-        </div>
+        </div> */}
         <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
         <table className="table-bordered table-auto border-collapse m-6 md:w-2/3 md:text-base text-xs text-center">
           <tbody>
@@ -83,11 +85,13 @@ export default function Home() {
                   {region.companies[0].data.map((data, index) => {
                     const { colorClass, text, fraction } = parseAndStyleCell(data);
                     return (
-                      <td key={index} className={`${colorClass} relative`}
-                          onMouseEnter={(event) => handleMouseEnter(fraction, event)}
-                          onMouseLeave={handleMouseLeave}>
-                        {text}
-                      </td>
+                      <Tooltip key={index} title={fraction} arrow>
+                        <td className={`${colorClass} relative`}
+                            onMouseEnter={(event) => handleMouseEnter(fraction, event)}
+                            onMouseLeave={handleMouseLeave}>
+                          {text}
+                        </td>
+                      </Tooltip>
                     );
                   })}
                 </tr>
@@ -97,11 +101,13 @@ export default function Home() {
                     {company.data.map((data, index) => {
                       const { colorClass, text, fraction } = parseAndStyleCell(data);
                       return (
-                        <td key={index} className={`${colorClass} relative text-center`}
-                            onMouseEnter={(event) => handleMouseEnter(fraction, event)}
-                            onMouseLeave={handleMouseLeave}>
-                          {text}
-                        </td>
+                        <Tooltip key={index} title={fraction} arrow>
+                          <td className={`${colorClass} relative text-center`}
+                              onMouseEnter={(event) => handleMouseEnter(fraction, event)}
+                             onMouseLeave={handleMouseLeave}>
+                            {text}
+                          </td>
+                        </Tooltip>
                       );
                     })}
                   </tr>
