@@ -10,30 +10,30 @@ export default function Home() {
     {
       regionName: '関東',
       companies: [
-        { name: '企業A', data: ["20/50", "50/50", "0/50", "28/50", "27/50", "29/50", "24/50", "22/50", "26/50", "27/50", "24/50", "29/50"] },
-        { name: '企業B', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40", "24/40", "30/40"] },
-        { name: '企業C', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40", "24/40", "30/40"] },
-        { name: '企業D', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40", "24/40", "30/40"] },
-        { name: '企業E', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40", "24/40", "30/40"] }
+        { name: '企業A', data: ["20/50", "50/50", "0/50", "28/50", "27/50", "29/50", "24/50", "22/50", "26/50", "27/50"] },
+        { name: '企業B', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40"] },
+        { name: '企業C', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40"] },
+        { name: '企業D', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40"] },
+        { name: '企業E', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40"] }
       ]
     },
     {
       regionName: '関西',
       companies: [
-        { name: '企業G', data: ["28/40", "25/40", "24/40", "21/40", "29/40", "32/40", "17/40", "24/40", "19/40", "17/40", "24/40", "25/40"] },
-        { name: '企業H', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40", "24/40", "30/40"] },
-        { name: '企業I', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40", "24/40", "30/40"] },
-        { name: '企業J', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40", "24/40", "30/40"] }
+        { name: '企業G', data: ["28/40", "25/40", "24/40", "21/40", "29/40", "32/40", "17/40", "24/40", "19/40", "17/40"] },
+        { name: '企業H', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40"] },
+        { name: '企業I', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40"] },
+        { name: '企業J', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40"] }
       ]
     },
     {
       regionName: '北陸',
       companies: [
-        { name: '企業K', data: ["33/55", "23/55", "27/55", "29/55", "31/55", "27/55", "33/55", "31/55", "26/55", "22/55", "24/55", "29/55"] },
-        { name: '企業L', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40", "24/40", "30/40"] },
-        { name: '企業M', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40", "24/40", "30/40"] },
-        { name: '企業N', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40", "24/40", "30/40"] },
-        { name: '企業O', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40", "24/40", "30/40"] }
+        { name: '企業K', data: ["33/55", "23/55", "27/55", "29/55", "31/55", "27/55", "33/55", "31/55", "26/55", "22/55"] },
+        { name: '企業L', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40"] },
+        { name: '企業M', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40"] },
+        { name: '企業N', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40"] },
+        { name: '企業O', data: ["35/40", "30/40", "8/40", "33/40", "28/40", "26/40", "30/40", "32/40", "27/40", "28/40"] }
       ]
     }
   ];
@@ -53,7 +53,7 @@ export default function Home() {
     const [numerator, denominator] = cellData.split('/').map(Number);
     const remaining = denominator - numerator;
     const colorClass = getColorClass(numerator, denominator);
-    return { colorClass, text: `残り${remaining}`, fraction: `${numerator}/${denominator}` };
+    return { colorClass, text: `${remaining}`, fraction: `${numerator}/${denominator}` };
   };
 
   const handleMouseEnter = (fraction, event) => {
@@ -72,13 +72,13 @@ export default function Home() {
           {hoverText}
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-        <table className="table-bordered table-auto border-collapse m-6">
+        <table className="table-bordered table-auto border-collapse m-6 md:w-2/3 md:text-base text-xs text-center">
           <tbody>
-            <tr ><td></td><td></td><td>1月1日</td><td>1月2日</td><td>1月3日</td><td>1月4日</td><td>1月5日</td><td>1月6日</td><td>1月7日</td><td>1月8日</td><td>1月9日</td><td>1月10日</td><td>1月11日</td><td>1月12日</td></tr>
+            <tr ><td></td><td></td><td>1月1日</td><td>1月2日</td><td>1月3日</td><td>1月4日</td><td>1月5日</td><td>1月6日</td><td>1月7日</td><td>1月8日</td><td>1月9日</td><td>1月10日</td></tr>
             {regions.map(region => (
               <>
                 <tr className="region-row">
-                  <td>{region.regionName}</td>
+                  <td rowSpan={region.companies.length}>{region.regionName}</td>
                   <td>{region.companies[0].name}</td>
                   {region.companies[0].data.map((data, index) => {
                     const { colorClass, text, fraction } = parseAndStyleCell(data);
@@ -93,12 +93,11 @@ export default function Home() {
                 </tr>
                 {region.companies.slice(1).map(company => (
                   <tr key={company.name}>
-                    <td></td>
                     <td>{company.name}</td>
                     {company.data.map((data, index) => {
                       const { colorClass, text, fraction } = parseAndStyleCell(data);
                       return (
-                        <td key={index} className={`${colorClass} relative`}
+                        <td key={index} className={`${colorClass} relative text-center`}
                             onMouseEnter={(event) => handleMouseEnter(fraction, event)}
                             onMouseLeave={handleMouseLeave}>
                           {text}
@@ -113,6 +112,5 @@ export default function Home() {
         </table>
       </div>
     </>
-    
   );
 }
