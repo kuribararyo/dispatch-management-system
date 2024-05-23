@@ -2,9 +2,23 @@
 import Header from "@/app/components/Header";
 import React, { useState } from 'react';
 import Tooltip from '@mui/material/Tooltip';
+import { makeStyles } from '@mui/styles';
+import { ClassNames } from "@emotion/react";
 
+
+const useStyles = makeStyles({
+  tooltip: {
+    backgroundColor: 'black',
+    color: 'white',
+    fontSize: '1em',
+  },
+  arrow: {
+    color: 'black',
+  },
+});
 
 export default function Home() {
+  const classes = useStyles(); 
   const [hoverText, setHoverText] = useState('');
   const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
 
@@ -85,7 +99,7 @@ export default function Home() {
                   {region.companies[0].data.map((data, index) => {
                     const { colorClass, text, fraction } = parseAndStyleCell(data);
                     return (
-                      <Tooltip key={index} title={fraction} arrow>
+                      <Tooltip key={index} title={fraction} arrow classes={{ tooltip: classes.tooltip, arrow: classes.arrow }}>
                         <td className={`${colorClass} relative`}
                             onMouseEnter={(event) => handleMouseEnter(fraction, event)}
                             onMouseLeave={handleMouseLeave}>
@@ -101,10 +115,10 @@ export default function Home() {
                     {company.data.map((data, index) => {
                       const { colorClass, text, fraction } = parseAndStyleCell(data);
                       return (
-                        <Tooltip key={index} title={fraction} arrow>
+                        <Tooltip key={index} title={fraction} arrow classes={{ tooltip: classes.tooltip, arrow: classes.arrow }}>
                           <td className={`${colorClass} relative text-center`}
                               onMouseEnter={(event) => handleMouseEnter(fraction, event)}
-                             onMouseLeave={handleMouseLeave}>
+                              onMouseLeave={handleMouseLeave}>
                             {text}
                           </td>
                         </Tooltip>
